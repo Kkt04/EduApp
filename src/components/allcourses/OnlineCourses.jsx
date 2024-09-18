@@ -10,10 +10,10 @@ const OnlineCourses = () => {
         <div className='container'>
           <Title subtitle='COURSES' title='Browse Our Online Courses' />
           <div className='content grid3'>
-            {online.map((val, index) => (
-              <div className='box' key={index}>
+            {online.map((val) => (
+              <div className='box'>
                 <div className='img'>
-                  <img src={val.cover} alt={val.courseName} />
+                  <img src={val.cover} />
                   <img src={val.hoverCover} alt='' className='show' />
                 </div>
                 <h1>{val.courseName}</h1>
