@@ -3,8 +3,9 @@ import './App.css';
 import Header from './components/common/heading/Header';
 import Home from './components/home/Home';
 import About from './components/about/About';
-import NotFound from './components/not-found/NotFound'; 
 import Title from './components/common/title/Title';
+import CourseHome from './components/allcourses/CourseHome';
+
 
 
 function App() {
@@ -13,10 +14,12 @@ function App() {
       <Router>
         <div> 
           <Header />
+          <Title />
           <Switch>
             <Route  path="/" exact component={Home} />
             <Route  path="/about" exact component={About} />
-            <Route component={NotFound} />
+            <Route path="/course" component={CourseHome} /> 
+                
           </Switch>
         </div>
       </Router>
