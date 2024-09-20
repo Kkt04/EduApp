@@ -1,5 +1,6 @@
 import React from "react";
 import { price } from "../../dummydata";
+import { Link } from 'react-router-dom';
 
 const PriceCard = () => {
   if (!price) {
@@ -21,7 +22,8 @@ const PriceCard = () => {
               {val.price}
             </h1>
             <p>{val.desc}</p>
-            <button className="outline-btn">GET STARTED</button>
+            {/* <button className="outline-btn">GET STARTED</button> */}
+            <Link to ='/payment' className='outline-btn'>GET STARTED</Link>
           </div>
         );
       })}

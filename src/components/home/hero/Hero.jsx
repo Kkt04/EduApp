@@ -9,15 +9,8 @@ const Hero = () => {
         <div className='container'>
           <div className='row'>
             <Title subtitle='WELCOME TO ACADEMIA' title='Best Online Education Expertise' />
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            <div className='buttons'>
-              <button className='primary-btn'>
-                GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i>
-              </button>
-              <button className='primary-btn'> 
-                VIEW COURSE <i className='fa fa-long-arrow-alt-right'></i>
-              </button>
-            </div>
+            <p>A place where you can learn and earn a certificate, And be industry ready EXPERT</p>
+            
           </div>
         </div>
       </section>

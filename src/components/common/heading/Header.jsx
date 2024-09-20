@@ -2,9 +2,16 @@ import React, { useState } from 'react';
 import Head from './Head';
 import './header.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
   const [click, setClick] = useState(false);
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    console.log('Login button clicked!');
+    navigate('/login');
+  };
   return (
     <>
       <Head />
@@ -16,13 +23,11 @@ const Header = () => {
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/pricing'>Pricing</Link></li>
             <li><Link to='/contact'>Contact</Link></li>
+            
           </ul>
           <div className='start'>
-            <div className='button'>GET CERTIFICATE</div>
+           <div className='button' onClick={handleLogin}>LOGIN</div>
           </div>
-          <button className='toggle' onClick={() => setClick(!click)}>
-            {click ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}
-          </button>
         </nav>
       </header>
     </>

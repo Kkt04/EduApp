@@ -3,12 +3,11 @@
     color: white;
     text-align: center;
 }
-.bazar{
-    color:orange
-}
+
 .logo h1 {
     font-size: 35px;
     font-weight: 900;
+    color: #fff;
 }
 
 header {
@@ -56,9 +55,11 @@ header li a:hover {
     }
     header ul.flexSB {
         display: none;
+        color: #fff;
     }
     header ul li {
         margin-bottom: 20px;
+    
     }
     .toggle {
         display: block;
@@ -76,4 +77,15 @@ header li a:hover {
         width: 100%;
         background-color: #1eb2a6;
     }
+}
+.button {
+background-color: #1eb2a6; 
+border: none;
+color: white;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
 }

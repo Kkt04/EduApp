@@ -8,8 +8,7 @@
 .aboutHome .left img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
+    object-fit: cover;}
 .aboutHome .right{
     padding: 80px 50px;
 }
@@ -60,17 +59,49 @@
     font-size: 20px;
     font-weight: 500;
 }
-@media screen and (max-width: 768px){
-    .aboutHome{
+@media screen and (max-width: 768px) {
+    .aboutHome {
         margin-top: 10%;
     }
+    
     .aboutHome .container {
         flex-direction: column-reverse;
     }
-    .aboutHome .row{
+
+    .aboutHome .row {
         width: 100%;
     }
-    .awrapper{
+
+    .awrapper {
         height: 50vh;
+    }
+
+    .aboutHome .left,
+    .aboutHome .right {
+        padding: 20px; 
+    }
+
+    .aboutHome .item {
+        padding: 15px; 
+        margin-top: 20px; 
+    }
+
+    .awrapper h1 {
+        font-size: 36px;
+    }
+
+    .awrapper h3 {
+        font-size: 18px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutHome .left img,
+    .aboutHome .right img {
+        width: 100%; 
+    }
+
+    .awrapper {
+        height: 60vh; 
     }
 }

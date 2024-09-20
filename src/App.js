@@ -7,25 +7,27 @@ import Title from './components/common/title/Title';
 import CourseHome from './components/allcourses/CourseHome';
 import Price from './components/pricing/Price';
 import Contact from './components/contact/Contact';
+import LoginPage from './components/login/LoginPage'; 
+import PaymentPage from './components/payment/Payment';
 
 
 function App() {
   return (
-    <>
-      <Router>
-        <div> 
-          <Header />
-          <Title />
-          <Routes>
-            <Route path="/" exact element={<Home />} />
-            <Route path="/about" exact element={<About />} />
-            <Route path="/course" exact element={<CourseHome />} />
-            <Route path="/pricing" exact element={<Price />} />
-            <Route path="/contact" exact element={<Contact />} />
-          </Routes>
-        </div>
-      </Router>
-    </>
+    <Router>
+      <Header />
+      <Title />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/course" element={<CourseHome />} />
+        <Route path="/pricing" element={<Price />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/payment" element={<PaymentPage />} />
+
+
+      </Routes>
+    </Router>
   );
 }
 
