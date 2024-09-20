@@ -23,7 +23,6 @@ function App() {
             <Route path="/pricing" exact element={<Price />} />
             <Route path="/contact" exact element={<Contact />} />
           </Routes>
-  
         </div>
       </Router>
     </>
