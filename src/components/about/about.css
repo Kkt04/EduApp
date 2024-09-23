@@ -8,7 +8,8 @@
 .aboutHome .left img{
     width: 100%;
     height: 100%;
-    object-fit: cover;}
+    object-fit: cover;
+}
 .aboutHome .right{
     padding: 80px 50px;
 }
@@ -27,6 +28,7 @@
 .aboutHome img{
     width: 70px;
     height: 70px;
+    max-width: 100%; /* Ensures images don't overflow on small screens */
 }
 .aboutHome .item h2{
     font-size: 20px;
@@ -51,6 +53,7 @@
 }
 .awrapper img{
     margin-right: 30px;
+    max-width: 100%; /* Ensures image scales properly */
 }
 .awrapper h1{
     font-size: 50px;
@@ -103,5 +106,14 @@
 
     .awrapper {
         height: 60vh; 
+    }
+    .aboutHome .right {
+        padding: 10px;
+    }
+    .awrapper h1 {
+        font-size: 28px; /* Further reduce font size for small screens */
+    }
+    .awrapper h3 {
+        font-size: 16px;
     }
 }

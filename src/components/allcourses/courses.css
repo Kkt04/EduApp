@@ -111,26 +111,70 @@
 .online .box:hover h1 {
   color: #fff;
 }
+
+/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
-}
-.container{
-  color:black;
-}
-.outline-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid #1eb2a6; 
-  border-radius: 6px; 
-  background-color: transparent; 
-  color: #1eb2a6; 
-  font-size: 16px; 
-  text-decoration: none;
-  text-align: center; 
-  cursor: pointer; 
-  transition: background-color 0.3s, color 0.3s; 
+  .coursesCard .text h1 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  
+  .coursesCard .details .dimg img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .coursesCard .rate i {
+    font-size: 11px;
+  }
+  
+  .online .img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .online h1 {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  .online span {
+    font-size: 14px;
+    padding: 4px 16px;
+  }
+  
+  .outline-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }
 
-.outline-btn:hover {
-  background-color: #1eb2a6; 
-  color: white;
+@media screen and (max-width: 480px) {
+  .coursesCard .text h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .coursesCard .items {
+    padding: 20px;
+  }
+  
+  .coursesCard .img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .online .img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .online h1 {
+    font-size: 16px;
+  }
+  
+  .outline-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }

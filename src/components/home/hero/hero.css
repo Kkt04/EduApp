@@ -1,38 +1,70 @@
 .hero {
-    background-image: url("../../../../public/images/bg.webp");
-    background-size: cover;
-    background-attachment: fixed;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    padding-top: 20%;
-    padding-right: 50px;
-    color: black;
+  background-image: url("../../../../public/images/bg.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  padding-top: 20%;
+  padding-right: 50px;
+  color: black;
+}
+.hero #heading h1 {
+  color: black;
+}
+.hero #heading {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+      padding-top: 30%;
+      padding-right: 20px; /* Reduced padding for medium screens */
+      background-position: center;
   }
   .hero #heading h1 {
-    color: black;
+      font-size: 36px; /* Adjusting font size for medium screens */
   }
-  .hero #heading {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-  }
-  @media screen and (max-width: 768px) {
-    .margin {
+}
+
+@media screen and (max-width: 768px) {
+  .margin {
       height: 40vh;
-    }
-    .hero {
+  }
+  .hero {
       background-position: right;
       padding-top: 50%;
       height: 80vh;
-    }
-    .hero .row {
-      width: 100%;
-    }
+      padding-right: 15px; /* Further reduction in padding */
   }
-p{
+  .hero #heading h1 {
+      font-size: 28px; /* Smaller font size for smaller screens */
+  }
+  .hero .row {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+      background-position: right;
+      padding-top: 60%;
+      height: 70vh;
+      padding-right: 10px; /* Minimal padding for mobile */
+  }
+  .hero #heading h1 {
+      font-size: 24px; /* Adjusting for mobile screens */
+  }
+  p {
+      font-size: 14px; /* Smaller paragraph font size for mobile */
+  }
+}
+
+p {
   color: black;
 }

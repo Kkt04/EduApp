@@ -1,11 +1,9 @@
 .container {
   padding: 20px;
-
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
 
 .form-toggle {
   display: flex;
@@ -84,7 +82,6 @@ button[type="submit"]:hover {
   background-color: #45a049;
 }
 
-/* Message styling */
 h2 {
   font-size: 1rem;
   color: #4caf50;
@@ -113,6 +110,7 @@ h2 {
     font-size: 0.9rem;
   }
 }
-.payment-page h1{
+
+.payment-page h1 {
   text-align: center;
 }

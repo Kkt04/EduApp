@@ -42,14 +42,47 @@ form .flexSB input:nth-child(1) {
     font-size: 15px;
     word-spacing: 5px;
 }
+
+/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
     .contacts .container {
-    flex-direction: column;
+        flex-direction: column;
     }
     .contacts iframe {
-    height: 50vh;
+        height: 50vh;
+    }
+    .contacts .right {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+    .contacts h1 {
+        font-size: 24px; /* Reduce heading size */
     }
     .contacts .row {
-    width: 100%;
+        width: 100%;
+    }
+    .contacts p {
+        font-size: 14px; /* Smaller font for paragraphs */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contacts .right {
+        padding: 20px; /* Further reduce padding */
+    }
+    .contacts h1 {
+        font-size: 20px;
+    }
+    .contacts p {
+        font-size: 12px;
+    }
+    .contacts textarea,
+    .contacts input {
+        padding: 12px; /* Reduce padding for inputs */
+    }
+    .contacts h3 {
+        font-size: 18px;
+    }
+    .contacts span {
+        font-size: 13px; /* Smaller font for span */
     }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./courses.css";
 import { coursesCard } from "../../dummydata";
-import OnlineCourses from "./OnlineCourses";
+
 import { Link } from 'react-router-dom';
 
 const CoursesCard = () => {
@@ -49,7 +49,7 @@ const CoursesCard = () => {
                   {val.priceAll} / {val.pricePer}
                 </h3>
               </div>
-              <Link to="/login" className="outline-btn">
+              <Link to="/payment" className="outline-btn">
                ENROLL NOW !
                 </Link>
             </div>
