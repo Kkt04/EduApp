@@ -50,7 +50,7 @@ const CoursesCard = () => {
                 </h3>
               </div>
               <Link to="/payment" className="outline-btn">
-               WATCH NOW!
+               Watch Now!
                 </Link>
             </div>
           ))}
