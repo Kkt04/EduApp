@@ -44,7 +44,7 @@
 .coursesCard .details .box {
   display: flex;
   align-items: center;
-  color: grey;
+  color: white;
 }
 .coursesCard .details span {
   color: #1eb2a6;

@@ -8,7 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f8f8f8;
+  background-color: white;
 }
 
 .container {
@@ -174,7 +174,6 @@ p {
   background-color: #fff;
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .grid, .grid2, .grid3 {
     grid-template-columns: repeat(2, 1fr); /* Adjust grid for medium screens */

@@ -8,8 +8,8 @@ const Hero = () => {
       <section className='hero'>
         <div className='container'>
           <div className='row'>
-            <Title subtitle='WELCOME TO ACADEMIA' title='Best Online Education Expertise' />
-            <p>A place where you can learn and earn a certificate, And be industry ready EXPERT</p>
+            <Title subtitle='WELCOME TO CourseBazar' title='Best Online Education Expertise' />
+            <p><b>A place where you can learn, And be industry ready EXPERT</b></p>
             
           </div>
         </div>
