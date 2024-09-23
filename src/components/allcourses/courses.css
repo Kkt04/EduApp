@@ -111,6 +111,31 @@
 .online .box:hover h1 {
   color: #fff;
 }
+.outline-btn {
+  margin: 0;
+  box-shadow: none;
+  border: 2px solid #1eb2a6;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px; 
+  background-color: transparent;
+  color: #1eb2a6; 
+  text-align: center; 
+  border-radius: 5px; 
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.outline-btn:hover {
+  background-color: #1eb2a6; 
+  color: #fff; 
+  transform: scale(1.05); 
+}
+
+.outline-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(30, 186, 165, 0.5); 
+}
+
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
