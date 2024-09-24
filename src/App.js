@@ -8,7 +8,8 @@ import CourseHome from './components/allcourses/CourseHome';
 import Faqs from './components/pricing/Faqs';
 import Contact from './components/contact/Contact';
 import LoginPage from './components/login/LoginPage'; 
-import PaymentPage from './components/payment/Payment';
+import VideosCard from './components/videos/VideosCard';
+
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         <Route path="/pricing" element={<Faqs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/videos" element={<VideosCard />} />
 
 
 

@@ -1,9 +1,7 @@
-import React from "react";
-import "./courses.css";
-import { coursesCard } from "../../dummydata";
-import { Link } from 'react-router-dom';
+import React from 'react';
+import './videos.css'; 
 
-const CourseCard = () => {
+const VideosCard = () => {
   const videos = [
     {
       category: 'Frontend Development',
@@ -84,7 +82,7 @@ const CourseCard = () => {
       },
   ];
 
- 
+  // Grouping videos by category
   const groupedVideos = videos.reduce((acc, video) => {
     if (!acc[video.category]) {
       acc[video.category] = [];
@@ -120,4 +118,4 @@ const CourseCard = () => {
   );
 };
 
-export default CourseCard;
+export default VideosCard;
