@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <CoursesCard/>
+      {/* <CoursesCard/> */}
   
       <AboutCard />
 
