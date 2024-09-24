@@ -15,6 +15,7 @@ const Contact = () => {
     <>
       <Back title='Contact us' />
       <section className='contacts padding'>
+        <div className='scroll-down-icon'></div> 
         <div className='container shadow flexSB'>
           <div className='left row'>
             <iframe src={map} frameBorder="0" allowFullScreen></iframe>
@@ -53,7 +54,7 @@ const Contact = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
 export default Contact;

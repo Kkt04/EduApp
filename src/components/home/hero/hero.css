@@ -31,11 +31,11 @@
 @media screen and (max-width: 1024px) {
   .hero {
       padding-top: 30%;
-      padding-right: 20px; /* Reduced padding for medium screens */
+      padding-right: 20px; 
       background-position: center;
   }
   .hero #heading h1 {
-      font-size: 36px; /* Adjusting font size for medium screens */
+      font-size: 36px; 
   }
 }
 

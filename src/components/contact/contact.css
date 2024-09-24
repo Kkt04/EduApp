@@ -47,7 +47,27 @@ form .flexSB input:nth-child(1) {
     margin-top: 10px;
     font-weight: bold;
   }
-
+  .scroll-down-icon {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 40px; 
+    color: #333; 
+    animation: bounce 2s infinite; /* Add a bounce animation */
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+      transform: translate(-50%, -50%) translateY(10px); /* Downward bounce */
+    }
+  }
+  
 
 
 /* Responsive Adjustments */
