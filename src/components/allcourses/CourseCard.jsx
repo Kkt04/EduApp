@@ -21,7 +21,7 @@ const CourseCard = () => {
       url: 'https://www.youtube.com/embed/mU6anWqZJcc',
     },
     {
-      category: 'Backend Development',
+      category: 'Backend Development', 
       title: 'Node.js Crash Course',
       url: 'https://www.youtube.com/embed/fBNz5xF-Kx4',
     },
