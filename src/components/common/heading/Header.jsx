@@ -1,27 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import Head from './Head';
 import './header.css';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [click, setClick] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false); 
   const navigate = useNavigate();
 
-  const storedUser = localStorage.getItem('email');
   useEffect(() => {
-    // const storedUser = localStorage.getItem('email');
+    const storedUser = localStorage.getItem('email');
     if (storedUser) {
       setIsLoggedIn(true); 
     }
-  }, [storedUser]);
+  }, []);
 
   const handleLogin = () => {
     if (isLoggedIn) {
       localStorage.clear();
       setIsLoggedIn(false);
-      alert("You have been logged out!");  
+      alert("You have been logged out!"); 
       navigate('/'); 
     } else {
       navigate('/login');
@@ -41,9 +39,12 @@ const Header = () => {
             <li><Link to='/contact'>Contact</Link></li>
           </ul>
           <div className='start'>
-            <div className='button' onClick={handleLogin}>
-              {isLoggedIn ? 'LOGOUT' : 'LOGIN'} 
+            <div className={`button ${isLoggedIn ? 'logout-button' : ''}`} onClick={handleLogin}>
+              {isLoggedIn ? 'LOGOUT' : 'LOGIN'}
             </div>
+          <button className='toggle' onClick={() => setClick(!click)}>
+              {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
+            </button>
           </div>
         </nav>
       </header>
@@ -52,3 +53,4 @@ const Header = () => {
 };
 
 export default Header;
+
