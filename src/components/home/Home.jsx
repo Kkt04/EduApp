@@ -6,13 +6,15 @@ import LoginPage from '../login/LoginPage';
 
 
 
-
 const Home = () => {
   return (
     <>
       <Hero />
       <CoursesCard/>
+  
       <AboutCard />
+
+      
     </>
   );
 };
