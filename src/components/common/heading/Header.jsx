@@ -9,12 +9,13 @@ const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false); 
   const navigate = useNavigate();
 
+  const storedUser = localStorage.getItem('email');
   useEffect(() => {
-    const storedUser = localStorage.getItem('email');
+    // const storedUser = localStorage.getItem('email');
     if (storedUser) {
       setIsLoggedIn(true); 
     }
-  }, []);
+  }, [storedUser]);
 
   const handleLogin = () => {
     if (isLoggedIn) {
